@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>百歌夜行</title>
-</head>
 
+<script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
 <body>
 
-<h1>百歌夜行</h1>
+<a-scene embedded arjs>
 
-<p>短歌は紙面から空間へ。</p>
+    <a-marker preset="hiro">
+
+<a-text
+    value="こんにちは"
+    color="red"
+    position="0 1 0"
+    rotation="-90 0 0"
+    align="center"
+    scale="2 2 2">
+</a-text>
+
+    </a-marker>
+
+    <a-entity camera></a-entity>
+
+</a-scene>
 
 </body>
 </html>
